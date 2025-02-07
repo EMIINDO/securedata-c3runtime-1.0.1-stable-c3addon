@@ -1,0 +1,137 @@
+{
+	"securedata": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "comparevalue0",
+				"scriptName": "CompareValue",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string"},
+					{"id":"comparison1", "type":"cmp"},
+					{"id":"value2", "type":"any"}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "addsecurekey0",
+				"scriptName": "AddSecureKey",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string"},
+					{"id":"value1", "type":"any"}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "setkey1",
+				"scriptName": "SetKey",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string"},
+					{"id":"value1", "type":"any"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "addto2",
+				"scriptName": "AddTo",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string"},
+					{"id":"value1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "subtractfrom3",
+				"scriptName": "SubtractFrom",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string"},
+					{"id":"value1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "deletekey4",
+				"scriptName": "DeleteKey",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "clear5",
+				"scriptName": "Clear",
+				"highlight": false
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "get0",
+				"expressionName": "Get",
+				"scriptName": "Get",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"key0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "keycount1",
+				"expressionName": "KeyCount",
+				"scriptName": "KeyCount",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"json": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 6,
+				"id": "jsonload6",
+				"scriptName": "JSONLoad",
+				"highlight": false,
+				"params": [
+					{"id":"json0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "jsonloadwithkey7",
+				"scriptName": "JSONLoadWithKey",
+				"highlight": false,
+				"params": [
+					{"id":"json0", "type":"string"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 2,
+				"id": "asjson2",
+				"expressionName": "AsJSON",
+				"scriptName": "AsJSON",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 3,
+				"id": "asjsonwithkey3",
+				"expressionName": "AsJSONWithKey",
+				"scriptName": "AsJSONWithKey",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}

@@ -1,0 +1,35 @@
+{
+  "is-c3-addon": true,
+  "sdk-version": 2,
+  "min-construct-version": "r401",
+  "type": "plugin",
+  "name": "SecureData",
+  "id": "SecureData",
+  "version": "1.0.0.0",
+  "author": "DeX",
+  "website": "http://c2community.ru/forum/viewtopic.php?f=18&t=7446",
+  "documentation": "http://c2community.ru/forum/viewtopic.php?f=18&t=7446",
+  "description": "Store secure data under named keys, e.g. set \"key\" to \"value\".",
+  "editor-scripts": [
+    "plugin.js",
+    "type.js",
+    "instance.js"
+  ],
+  "file-list": [
+    "c3runtime/main.js",
+    "c2runtime/runtime.js",
+    "c3runtime/actions.js",
+    "c3runtime/conditions.js",
+    "c3runtime/expressions.js",
+    "c3runtime/instance.js",
+    "c3runtime/plugin.js",
+    "c3runtime/type.js",
+    "lang/en-US.json",
+    "aces.json",
+    "addon.json",
+    "icon.png",
+    "plugin.js",
+    "type.js",
+    "instance.js"
+  ]
+}

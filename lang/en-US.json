@@ -1,0 +1,123 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for SecureData.",
+	"text": {
+		"plugins": {
+			"securedata": {
+				"name": "SecureData",
+				"description": "Store secure data under named keys, e.g. set \"key\" to \"value\".",
+				"help-url": "http://c2community.ru/forum/viewtopic.php?f=18&t=7446",
+				"properties": {
+					"secure-key": {
+						"name": "Secure Key",
+						"desc": "The key for encoding."
+						}
+				},
+				"aceCategories": {
+					"securedata": "SecureData",
+					"json": "JSON"
+				},
+				"conditions": {
+					"comparevalue0": {
+						"list-name": "Compare value",
+						"display-text": "Key [b]{0}[/b] {1} [b]{2}[/b]",
+						"description": "Compare the value at a key.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key to test."},
+							"comparison1": { "name":"Comparison", "desc":"How to compare the key's value."},
+							"value2": { "name":"Value", "desc":"The value to compare to."}
+						}
+						}
+				},
+				"actions": {
+					"addsecurekey0": {
+						"list-name": "Add key",
+						"display-text": "Add key [i]{0}[/i] with value [i]{1}[/i]",
+						"description": "Add a new key in to storage. If it already exists, its value will be overwritten.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key.  If it already exists, its value will be overwritten."},
+							"value1": { "name":"Value", "desc":"The value to store for the key."}
+						}
+					},
+					"setkey1": {
+						"list-name": "Set key",
+						"display-text": "Set [i]{0}[/i] to value [i]{1}[/i]",
+						"description": "Set an existing key in to storage. If it does not exist, this will have no effect.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key.  If it does not exist, this will have no effect."},
+							"value1": { "name":"Value", "desc":"The value to store for the key."}
+						}
+					},
+					"addto2": {
+						"list-name": "Add to key",
+						"display-text": "Add to [i]{0}[/i] value [i]{1}[/i]",
+						"description": "Add to existing key in to storage. If it does not exist, this will have no effect.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key.  If it does not exist, this will have no effect."},
+							"value1": { "name":"Value", "desc":"The value to store for the key."}
+						}
+					},
+					"subtractfrom3": {
+						"list-name": "Subtract from key",
+						"display-text": "Subtract from [i]{0}[/i] value [i]{1}[/i]",
+						"description": "Subtract from existing key in to storage. If it does not exist, this will have no effect.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key.  If it does not exist, this will have no effect."},
+							"value1": { "name":"Value", "desc":"The value to store for the key."}
+						}
+					},
+					"deletekey4": {
+						"list-name": "Delete key",
+						"display-text": "Delete key [i]{0}[/i]",
+						"description": "Delete a key from storage.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key to delete."}
+						}
+					},
+					"clear5": {
+						"list-name": "Clear",
+						"display-text": "Clear",
+						"description": "Delete all keys and values from storage, returning to empty."
+					},
+					"jsonload6": {
+						"list-name": "Load",
+						"display-text": "Load from JSON string [i]{0}[/i]",
+						"description": "Load from a SecureData previously encoded in JSON format.",
+						"params": {
+							"json0": { "name":"JSON", "desc":"A string of the JSON data to load."}
+						}
+					},
+					"jsonloadwithkey7": {
+						"list-name": "Load with key",
+						"display-text": "Load from JSON string with key [i]{0}[/i]",
+						"description": "Load from a SecureData previously encoded in JSON format with encrypt key.",
+						"params": {
+							"json0": { "name":"JSON", "desc":"A string of the JSON data to load."}
+						}
+					}
+				},
+				"expressions": {
+					"get0": {
+						"description": "Get the value from a key.  0 is returned if it does not exist.",
+						"translated-name": "Get",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key to retrieve."}
+						}
+						},
+					"keycount1": {
+						"description": "Get the number of keys in storage.",
+						"translated-name": "KeyCount"
+						},
+					"asjson2": {
+						"description": "Return the contents of the array in JSON format.",
+						"translated-name": "AsJSON"
+						},
+					"asjsonwithkey3": {
+						"description": "Return the contents of the array in JSON format with encrypt key.",
+						"translated-name": "AsJSONWithKey"
+						}
+				}
+			}
+		}
+	}
+}
